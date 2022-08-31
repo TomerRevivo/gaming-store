@@ -1,0 +1,20 @@
+
+
+
+<div class="center-container">
+
+    <div class="card">
+        <h1>subscribe</h1>
+        <h3>subscribe with youre mail for update</h3>
+
+        <div class="input-group mb-3">
+            <input [(ngModel)]='name' type="text" class="form-control" placeholder="Name" aria-label="Name">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input [(ngModel)]='email' type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+        </div>
+
+        <div><button (click)="saveUserMail()" type="button" class="btn btn-success" routerLink="/home">Subscribe</button></div>
+        
+    </div>
+    
+</div>

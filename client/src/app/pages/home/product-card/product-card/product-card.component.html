@@ -1,0 +1,12 @@
+<div class="card">
+    <img alt="" src="{{product.image}}" class="model">
+    <div class="container">
+      <h4><b>{{product.title}}</b></h4>
+      <p class="detialsOfProduct">{{product.details}}</p>
+      <p class="price"><b>{{product.price | currency:'ILS'}}</b></p>
+
+      <button type="button" class="btn btn-primary item-buttons" (click)="handleAddToCart()">Add to cart</button> 
+      <button type="button" class="btn btn-outline-secondary item-buttons"(click)="viewDetails()" routerLink="/productDetails">View details</button>
+      </div>
+    </div>
+    
